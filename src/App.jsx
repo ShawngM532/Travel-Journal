@@ -7,6 +7,7 @@ import data from "./data"
 export default function App() {
     const Entries = data.map((data) => {
         return <Entry 
+            key = {data.id}
             image_src = {data.img.src}
             image_alt = {data.img.alt}
             title = {data.title}
